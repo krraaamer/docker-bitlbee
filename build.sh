@@ -17,11 +17,18 @@ make
 make install
 make install-dev
 
-#bitlbee-facebook
+# bitlbee-facebook
 cd
 git clone https://github.com/bitlbee/bitlbee-facebook.git
 cd bitlbee-facebook
 ./autogen.sh
+make
+make install
+
+# matrix
+cd
+git clone https://github.com/matrix-org/purple-matrix.git
+cd purple-matrix
 make
 make install
 
@@ -38,6 +45,7 @@ cd
 rm -fr /root/build.sh
 rm -fr $BITLBEE_VERSION*
 rm -rf bitlbee-facebook
+rm -rf purple-matrix
 
 # add user bitlbee
 adduser --system --uid 1000 --home /var/lib/bitlbee --disabled-password --disabled-login --shell /usr/sbin/nologin bitlbee

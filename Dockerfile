@@ -1,7 +1,7 @@
 FROM buildpack-deps:stable-scm
-LABEL maintainer="Michele Bologna <github@michelebologna.net>"
-LABEL name="BitlBee Docker container by Michele Bologna"
-LABEL version="mb-3.6-20201026"
+LABEL maintainer="Cosmo Kramer <krraaamer@gmail.com>"
+LABEL name="Kramer's Bitlbee Stack"
+LABEL version="2021-03-21"
 
 ENV BITLBEE_VERSION=3.6
 

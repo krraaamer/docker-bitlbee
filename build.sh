@@ -40,5 +40,5 @@ rm -fr $BITLBEE_VERSION*
 rm -rf bitlbee-facebook
 
 # add user bitlbee
-adduser --system --uid 1000 --gid 1000 --home /var/lib/bitlbee --disabled-password --disabled-login --shell /usr/sbin/nologin bitlbee
+adduser --system --uid 1000 --home /var/lib/bitlbee --disabled-password --disabled-login --shell /usr/sbin/nologin bitlbee
 touch /var/run/bitlbee.pid && chown bitlbee:nogroup /var/run/bitlbee.pid
